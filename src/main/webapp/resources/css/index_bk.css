@@ -1,0 +1,153 @@
+@charset "utf-8";
+
+/* HTML */
+body {background:#fbfbfb}
+
+/* HEADER */
+.header {display:block; width:100%; height:550px; background-image:url("./../images/bg03_b.png"); margin:0 auto; background-size:cover; position:relative}
+/* 로그인 전*/
+
+.userMenu {position:absolute; right:5%; top:30px}
+.userMenu > a {display:block; width:100px; padding:10px 0; float:left; text-align:center; margin-left:15px; font:15px "noto500", sans-serif; border-radius:50px; cursor:pointer; background:#fff; box-shadow:0 0 15px #828282; -moz-transition:box-shadow 0.5s; -o-transition:box-shadow 0.5s; transition:box-shadow 0.5s}
+.userMenu > a:hover {box-shadow:0 0 15px #4b4b4b; -webkit-transition:box-shadow 0.5s; -moz-transition:box-shadow 0.5s; -o-transition:box-shadow 0.5s; transition:box-shadow 0.5s}
+.loginBtn {margin-left:0; background:#fdfdfd; color:#001c32}
+.joinBtn {background:#3ed4ff !important; color:#fff !important}
+
+
+/* 로그인 후*/
+.myInfoTag {width:50%; float:left; padding:10px 0; text-align:center; cursor:pointer}
+.myinfo {display:none; background:#3ed4ff; color:#fff; position:relative; z-index:150;}
+.logout {display:none; background:#e9e9e9; color:#000}
+.myInfoBtn {display:block; float:left; text-align:center; cursor:pointer; overflow:hidden;
+background-color:#3ed4ff;
+-webkit-transition:background-color 1s;
+-moz-transition:background-color 1s;
+-o-transition:background-color 1s;
+transition:background-color 1s;
+
+color:#fff;
+-webkit-transition:color 1s;
+-moz-transition:color 1s;
+-o-transition:color 1s;
+transition:color 1s;
+
+box-shadow:0 0 15px #828282;
+-webkit-transition:box-shadow 0.5s;
+-moz-transition:box-shadow 0.5s;
+-o-transition:box-shadow 0.5s;
+transition:box-shadow 0.5s;
+
+border-radius:50px;
+-webkit-transition:border-radius 1s;
+-moz-transition:border-radius 1s;
+-o-transition:border-radius 1s;
+transition:border-radius 1s;
+
+width:180px;
+-webkit-transition:width 1s;
+-moz-transition:width 1s;
+-o-transition:width 1s;
+transition:width 1s}
+
+.myInfoBtn:hover {
+
+background-color:#fff;
+-webkit-transition:background-color 1s;
+-moz-transition:background-color 1s;
+-o-transition:background-color 1s;
+transition:background-color 1s;
+
+color:#000;
+-webkit-transition:color 1s;
+-moz-transition:color 1s;
+-o-transition:color 1s;
+transition:color 1s;
+
+box-shadow:0 0 15px #4b4b4b;
+-webkit-transition:box-shadow 0.5s;
+-moz-transition:box-shadow 0.5s;
+-o-transition:box-shadow 0.5s;
+transition:box-shadow 0.5s;
+
+border-radius:5px !important;
+-webkit-transition:border-radius 1s;
+-moz-transition:border-radius 1s;
+-o-transition:border-radius 1s;
+transition:border-radius 1s;
+
+width:300px;
+-webkit-transition:width 1s;
+-moz-transition:width 1s;
+-o-transition:width 1s;
+transition:width 1s}
+
+.myInfoBtn p {font:15px "noto500", sans-serif; padding:10px 15px}
+/*.myInfoBtn {background:#3ed4ff !important; color:#fff !important; border-radius:50px;  }*/
+
+
+
+
+/*.myInfoBtn:hover {}
+
+.myInfoHover {}
+.userMenu > .myInfoBtn {display:block; background:#3ed4ff; color:#fff; position:relative; overflow:hidden;}
+.myInfoHover {width:300px; background:red !important; border-radius:5px !important}
+.myInfoHover > p {float:right; width:100%; font:15px "noto500", sans-serif; text-align:center; padding-top:10px;}
+.myInfoBtn > a {float:left; width:50%; margin-top:10px; background:#ddd; font:14px "noto350", sans-serif; text-align:center; padding:10px 0; cursor:pointer; display:none}*/
+
+/* BODY */
+.defCon {margin-top:-250px}
+/* logo */
+.logo {position:relative; z-index:150; width:300px; display:block; margin:0 auto 30px}
+.logo h1 img {width:300px}
+/* searchBox */
+.searchWrap {margin-bottom:130px; position:relative; z-index:150}
+.searchWrap form {display:table; margin:0 auto; position:relative; width:605px}
+.searchArea {width:500px; height:40px; font:20px 'noto400', sans-serif; border-radius:50px; padding:10px 80px 10px 25px; border:none; box-shadow:0 6px 20px #0000005c}
+.searchBtn {display:block; position:absolute; right:0; top:0; width:60px; height:60px; border:none; background:#3ed4ff; border-radius:50px; outline:none; box-shadow:-2px 0px 10px 0px #0099c54f}
+.searchBtn i {display:block; width:25px; height:25px; background:url("./../images/search_icon.png"); background-size:25px; margin:0 auto; background-repeat:no-repeat}
+/* filterBox */
+.filterWrap {box-shadow:0 0 19px #9f9f9f; width:605px; position:absolute; top:420px; left:50%; transform:translateX(-50%); z-index:100; margin-bottom:50px; background:#fff; overflow:hidden; display:none}
+.filter {width:605px; padding:45px 20px 20px 20px; box-sizing:border-box; background:#fff}
+.filter > h4 {font:14px "noto400", sans-serif; color:#605f6f; margin:10px 0 10px 0}
+.filter > h4 > i {font:12px "noto500", sans-serif}
+.userPick {width:100%}
+.userPick li {float:left; width:31%; margin-left:3.5%;}
+.userPick li a {display:block; cursor:pointer}
+.userPick li:first-child {margin-left:0}
+.pickImg {width:100%}
+.tagSelectWrap {}
+.tagSelectWrap li {font:16px "noto350", sans-serif; display:inline-block; padding:8px 30px; border-radius:50px; cursor:pointer; color:#686868; border:1px solid #dcdcdc; margin-bottom:10px}
+.tagSelectWrap li:focus {}
+.tagSelect {background:#2196f3 !important; color:#fff !important; border:1px solid #2196f3 !important}
+.filterCloseBtn {font:14px "noto400", sans-serif; display:inline-block; padding:8px 30px; border-radius:50px; cursor:pointer; color:#636363; border:1px solid #dcdcdc; background:#dcdcdc; float:right; margin:20px 0; outline:none}
+.tagSearchBtn {width:100%; border:none; background:#fff; font:18px "noto500", sans-serif; padding:20px 0; box-shadow:0 0 13px #ccc; outline:none; -webkit-transition: box-shadow 0.5s;
+-moz-transition: box-shadow 0.5s;
+-o-transition: box-shadow 0.5s;
+transition: box-shadow 0.5s}
+.tagSearchBtn:hover {box-shadow:0 0 17px #929292;   -webkit-transition: box-shadow 0.5s;
+  -moz-transition: box-shadow 0.5s;
+  -o-transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s}
+.tagSearchBtn i {color:#008eff; font:20px "noto900", sans-serif}
+.searchTxt {width:100%}
+
+/* contentBox */
+.contentBox {margin-bottom:100px}
+.conTitle {font:18px "noto400", sans-serif; padding-bottom:8px}
+.conTitle i {background: #63e2ff;
+    background:-webkit-linear-gradient(left, #3fc8ff, #63e2ff);
+    background:-moz-linear-gradient(right, #3fc8ff, #63e2ff);
+    background:-o-linear-gradient(right, #3fc8ff, #63e2ff);
+    background:linear-gradient(to right, #3fc8ff, #63e2ff);
+    -webkit-background-clip:text; background-clip:text;
+    color:transparent; margin-right:10px}
+.conList li {float:left; margin-left:20px; box-shadow:0px 0 5px #d0d0d0}
+.conList li:first-child {margin-left:0}
+.conList li a {display:block; width:235px; cursor:pointer}
+.conList li a img {width:235px; height:235px}
+.conTxt {background:#fff; height:95px; padding:20px; box-sizing:border-box; position:relative}
+.conTxt h5 {font:15px "noto500", sans-serif; color:#404040}
+.conTxt h5 > span {font:13px "noto500", sans-serif; color:#404040; letter-spacing:-0.5px}
+.conTxt h6 {font:16px "noto300", sans-serif; color:#18afda; position:absolute; right:20px; bottom:-25px}
+.conTxt h6 strong{font:18px "Roboto", sans-serif; color:#18afda; margin-right:2px}

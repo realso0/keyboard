@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="user">
+
+
+<insert id="insertUser" parameterType="kr.co.furnitureanalyst.vo.UserVo" >
+<![CDATA[
+ 
+
+insert into users(user_id,password,birthday,gender,user_question,user_answer,create_date)
+values (#{userId},#{password},#{birthday},#{gender},#{userQuestion},#{userAnswer},sysdate)
+
+	
+
+		
+]]>
+</insert>
+<select id="selectUserByIdPw" parameterType="kr.co.furnitureanalyst.vo.UserVo" resultType="kr.co.furnitureanalyst.vo.UserVo">
+<![CDATA[
+
+select user_id userId  
+from users 
+where user_id = #{userId} and password = #{password}
+
+]]>
+
+</select>
+
+<select id="selectUserByUserId" parameterType="String" resultType="kr.co.furnitureanalyst.vo.UserVo">
+<![CDATA[
+
+select user_id userId  
+from users 
+where user_id = #{userId}
+
+]]>
+
+</select>
+
+<update id="updatePassword" parameterType="kr.co.furnitureanalyst.vo.UserVo" > 
+
+<![CDATA[
+update USERS 		set PASSWORD=#{password}
+					where user_id=#{userId}
+		
+]]>
+</update>
+
+</mapper>

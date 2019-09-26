@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+/* MOBILE */
+@media (max-width: 575px){
+	.loginVisual {width:100%; overflow:hidden}
+	.loginVisual img {width:150%; display:block; margin:0 auto}
+	.loginContent {background:#fff; width:90%; margin:0 auto; box-shadow:0 0 5px #6b6b6b; padding:15px; box-sizing:border-box; position:relative; z-index:100; top:-125px}
+	.loginContent h3 {font:30px "Roboto", sans-serif; font-weight:700; margin-bottom:10px}
+	.form_private {width:100%}
+	.inputTit {font:14px "noto300", sans-serif; width:100%; float:left; margin-bottom:6px; cursor:default}
+	.inputBox {border:2px solid #d7d7d7; border-radius:4px; width:100%; font:14px "noto100", sans-serif; box-sizing:border-box; display:block; padding:8px 15px; float:left; margin-bottom:15px; -webkit-transition:border 0.5s; -moz-transition:border 0.5s; -o-transition:border 0.5s; transition:border 0.5s}
+	.inputBox:focus {border:2px solid #2196f3; box-shadow:0 0 6px #d4d4d49c; -webkit-transition:border 0.5s; -moz-transition:border 0.5s; -o-transition:border 0.5s; transition:border 0.5s}
+	.coreBtn {padding:13px 35px; font:17px "noto700", sans-serif; border:none; outline:none; border-radius:5px; float:right; margin-top:5px; background:#2196F3; box-shadow:0 0 10px #2b2b2b38; color:#fff; -webkit-transition:box-shadow 0.5s; -moz-transition:box-shadow 0.5s; -o-transition:border 0.5s; transition:box-shadow 0.5s}
+	.coreBtn:hover {-webkit-transition:box-shadow 0.5s; -moz-transition:box-shadow 0.5s; -o-transition:border 0.5s; transition:box-shadow 0.5s; box-shadow:0 0 10px #2b2b2b87}
+}
+
+/* TABLET */
+@media (min-width: 576px) and (max-width: 1023px) {
+	.loginVisual {width:100%; overflow:hidden}
+	.loginVisual img {width:150%; display:block; margin:0 auto}
+	.loginContent {background:#fff; width:90%; margin:0 auto; box-shadow:0 0 5px #6b6b6b; padding:15px; box-sizing:border-box; position:relative; z-index:100; top:-125px}
+	.loginContent h3 {font:30px "Roboto", sans-serif; font-weight:700; margin-bottom:10px}
+	.form_private {width:50%; margin:0 auto}
+	.inputTit {font:14px "noto300", sans-serif; width:100%; float:left; margin-bottom:6px; cursor:default}
+	.inputBox {border:2px solid #d7d7d7; border-radius:4px; width:100%; font:14px "noto100", sans-serif; box-sizing:border-box; display:block; padding:8px 15px; float:left; margin-bottom:15px; -webkit-transition:border 0.5s; -moz-transition:border 0.5s; -o-transition:border 0.5s; transition:border 0.5s}
+	.inputBox:focus {border:2px solid #2196f3; box-shadow:0 0 6px #d4d4d49c; -webkit-transition:border 0.5s; -moz-transition:border 0.5s; -o-transition:border 0.5s; transition:border 0.5s}
+	.coreBtn {padding:13px 35px; font:17px "noto700", sans-serif; border:none; outline:none; border-radius:5px; float:right; margin-top:5px; background:#2196F3; box-shadow:0 0 10px #2b2b2b38; color:#fff; -webkit-transition:box-shadow 0.5s; -moz-transition:box-shadow 0.5s; -o-transition:border 0.5s; transition:box-shadow 0.5s}
+	.coreBtn:hover {-webkit-transition:box-shadow 0.5s; -moz-transition:box-shadow 0.5s; -o-transition:border 0.5s; transition:box-shadow 0.5s; box-shadow:0 0 10px #2b2b2b87}
+}
+
+/* PC */
+@media (min-width: 1024px) {
+	.sizeLimit {max-width:100%}
+	.loginVisual {width:100%; height:400px; overflow:hidden}
+	.loginVisual img {width:100%; min-width:100%; display:block; margin:-150px auto 0}
+	.loginContent {background:#fff; width:650px; margin:0 auto; box-shadow:0 0 5px #6b6b6b; padding:15px; box-sizing:border-box; position:relative; z-index:100; top:-125px}
+	.loginContent h3 {font:30px "Roboto", sans-serif; font-weight:700; margin-bottom:10px}
+	.form_private {width:50%; margin:0 auto}
+	.inputTit {font:14px "noto300", sans-serif; width:100%; float:left; margin-bottom:6px; cursor:default}
+	.inputBox {border:2px solid #d7d7d7; border-radius:4px; width:100%; font:14px "noto100", sans-serif; box-sizing:border-box; display:block; padding:8px 15px; float:left; margin-bottom:15px; -webkit-transition:border 0.5s; -moz-transition:border 0.5s; -o-transition:border 0.5s; transition:border 0.5s}
+	.inputBox:focus {border:2px solid #2196f3; box-shadow:0 0 6px #d4d4d49c; -webkit-transition:border 0.5s; -moz-transition:border 0.5s; -o-transition:border 0.5s; transition:border 0.5s}
+	.coreBtn {padding:13px 35px; font:17px "noto700", sans-serif; border:none; outline:none; border-radius:5px; float:right; margin-top:5px; background:#2196F3; box-shadow:0 0 10px #2b2b2b38; color:#fff; -webkit-transition:box-shadow 0.5s; -moz-transition:box-shadow 0.5s; -o-transition:border 0.5s; transition:box-shadow 0.5s}
+	.coreBtn:hover {-webkit-transition:box-shadow 0.5s; -moz-transition:box-shadow 0.5s; -o-transition:border 0.5s; transition:box-shadow 0.5s; box-shadow:0 0 10px #2b2b2b87}
+}

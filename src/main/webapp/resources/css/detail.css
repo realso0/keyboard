@@ -1,0 +1,214 @@
+@charset "utf-8";
+.likeOn {color:#d32f2f; -webkit-transition:color 0.5s; -moz-transition:color 0.5s; -o-transition:color 0.5s; transition:color 0.5s}
+.likeOff {color:#9c9c9c; -webkit-transition:color 0.5s; -moz-transition:color 0.5s; -o-transition:color 0.5s; transition:color 0.5s}
+/* MOBILE */
+@media (max-width: 575px){
+	.pcUrlBtn {display:none}
+	
+	/* imgContent */
+	.imgContent {margin-top:50px}
+	.imgContent .itemImg {width:100%}
+	.imgContent .itemImg img {width:100%}
+	
+	/* infoContent */
+	.infoContent {background:#fff; position:relative; box-shadow:0 -5px 14px #0000003d}
+	.infoArea {width:90%; margin:0 auto}
+	
+	/* infoContent - likeBtn */
+	.likeBtn {background:#fff; border-radius:50%; width:56px; box-shadow:0 5px 10px #0000009c; position:relative; float:right; top:-35px; right:15px; opacity:0}
+	.likeBtn i {padding:20px 0; display:block; text-align:center}
+	
+	/* infoContent - basicInfoWrap */
+	.basicInfoWrap {padding:25px 0 0 0}
+	.basicInfoWrap h3 {font:14px "noto100", sans-serif}
+	.basicInfoWrap h4 {font:20px "noto700", sans-serif}
+	.basicInfoWrap p {font:14px "Roboto", sans-serif; font-weight:700; margin-top:10px}
+	
+	/* infoContent - textInfoWrap */
+	.textInfoWrap {padding:15px 0 0 0}
+	.textInfoWrap table {width:100%; color:#353535}
+	.textInfoWrap th {width:20%; font:14px "noto500", sans-serif; text-align:left}
+	.textInfoWrap td {width:30%; font:14px "noto300", sans-serif; text-align:left}
+	
+	/* infoContent - typeTagWrap */
+	.typeTagWrap {padding:30px 0 0 0}
+	.tagView {width:100%}
+	.tagView tr {border-bottom:1px solid #e6e6e6}
+	.tagView th {text-align:left; width:30%}
+	.tagView td {width:70%; padding:10px 0 3px 0}
+	.tagView th i {font-size:20px; color:#03a9f4}
+	.tagView th span {font:14px "noto500", sans-serif; position:relative; margin-left:5px; top:-2.5px}
+	.tagView li {font:13px "noto300", sans-serif; float:left; padding:4px 12px; border:1px solid #9e9e9e; margin-right:7px; margin-bottom:7px; color:#252525; border-radius:15px}
+	.tagPickBtn {float:right; padding:10px 5px}
+	.tagPickBtn i {-webkit-transition:-webkit-transform .3s ease-in-out;
+    -ms-transition:-ms-transform .3s ease-in-out; transition:transform .3s ease-in-out}
+	.tagPickBtn span {font:14px "noto500", sans-serif; padding-right:7px}
+	.tagPickArea {border-radius:10px; float:left; width:100%; background:#efefef; padding:15px; box-sizing:border-box; display:none}
+	.tagPickArea h4 {font:15px "noto500", sans-serif; text-align:center; margin-bottom:15px}
+	.tagPickArea ul li {float:left; padding:4px 10px; font:13px "noto100", sans-serif; border:1px solid #737373; border-radius:5px; margin-right:5px; margin-bottom:5px}
+	.tagSelect {background:#fff; border:1px solid #fff !important}
+	.tagPickForm {float:right; padding-top:15px}
+	.formBtn {width:60px; padding:7px 0; font:14px "noto500", snas-serif; border:none; background:#b3b3b3; border-radius:5px; color:#000}
+	.rotateAction {transform:rotate(180deg); -ms-transform:rotate(180deg); -webkit-transform:rotate(180deg)}
+
+	/* infoContent - infoGraphWrap */
+	.infoGraphWrap {padding:30px 0 0 0; float:left; width:100%}
+	.graphTable {width:100%}
+	.graphTable th {width:50%; text-align:center; font:14px "noto500", sans-serif}
+	.ageGraph {width:100%}
+	.graphTitle {width:35% !important; font:14px "noto300", sans-serif !important}
+	.graphBar {padding:10px 0; background:#90a4ae; display:block; position:relative; float:left; margin-left:3px}
+	.graphName {font:13px "noto100", sans-serif; float:left; margin-left:5px}
+
+	/* infoContnet - itemRecommWrap */
+	.itemRecommWrap {padding:20px 0; float:left; width:100%}
+	.itemRecommWrap h4 {font:14px "noto500", sans-serif; padding-bottom:10px}
+	.swiper-slide img {width:100%}
+
+	/* actionContent */
+	.actionContent {position:fixed; bottom:10px; left:0; z-index:100; opacity:0}
+	.urlBtn {background:linear-gradient(#29B6F6, #2196F3); width:40%; margin:0 auto; display:block; padding:10px 0; text-align:center; border-radius:30px; color:#fff; box-shadow:0px 3px 10px #2d2d2d}
+	.urlBtn i {font-size:13px}
+	.urlBtn span {font:14px "noto500", sans-serif; padding-left:5px}
+}
+
+/* TABLET */
+@media (min-width: 576px) and (max-width: 1023px) {
+	.pcUrlBtn {display:none}
+	
+	/* imgContent */
+	.imgContent .itemImg {width:100%}
+	.imgContent .itemImg img {width:100%}
+	
+	/* infoContent */
+	.infoContent {background:#fff; position:relative; box-shadow:0 -5px 14px #0000003d}
+	.infoArea {width:90%; margin:0 auto}
+	
+	/* infoContent - likeBtn */
+	.likeBtn {background:#fff; border-radius:50%; width:56px; box-shadow:0 5px 10px #0000009c; position:relative; float:right; top:-35px; right:15px; opacity:0}
+	.likeBtn i {padding:20px 0; display:block; text-align:center}
+	
+	/* infoContent - basicInfoWrap */
+	.basicInfoWrap {padding:25px 0 0 0}
+	.basicInfoWrap h3 {font:14px "noto100", sans-serif}
+	.basicInfoWrap h4 {font:20px "noto700", sans-serif}
+	.basicInfoWrap p {font:14px "Roboto", sans-serif; font-weight:700; margin-top:10px}
+	
+	/* infoContent - textInfoWrap */
+	.textInfoWrap {padding:15px 0 0 0}
+	.textInfoWrap table {width:100%; color:#353535}
+	.textInfoWrap th {width:20%; font:14px "noto500", sans-serif; text-align:left}
+	.textInfoWrap td {width:30%; font:14px "noto300", sans-serif; text-align:left}
+	
+	/* infoContent - typeTagWrap */
+	.typeTagWrap {padding:30px 0 0 0}
+	.tagView {width:100%}
+	.tagView tr {border-bottom:1px solid #e6e6e6}
+	.tagView th {text-align:left; width:30%}
+	.tagView td {width:70%; padding:10px 0 3px 0}
+	.tagView th i {font-size:20px; color:#03a9f4}
+	.tagView th span {font:14px "noto500", sans-serif; position:relative; margin-left:5px; top:-2.5px}
+	.tagView li {font:13px "noto300", sans-serif; float:left; padding:4px 12px; border:1px solid #9e9e9e; margin-right:7px; margin-bottom:7px; color:#252525; border-radius:15px}
+	.tagPickBtn {float:right; padding:10px 5px}
+	.tagPickBtn i {-webkit-transition:-webkit-transform .3s ease-in-out;
+    -ms-transition:-ms-transform .3s ease-in-out; transition:transform .3s ease-in-out}
+	.tagPickBtn span {font:14px "noto500", sans-serif; padding-right:7px}
+	.tagPickArea {border-radius:10px; float:left; width:100%; background:#efefef; padding:15px; box-sizing:border-box; display:none}
+	.tagPickArea h4 {font:15px "noto500", sans-serif; text-align:center; margin-bottom:15px}
+	.tagPickArea ul li {float:left; padding:4px 10px; font:13px "noto100", sans-serif; border:1px solid #737373; border-radius:5px; margin-right:5px; margin-bottom:5px}
+	.tagSelect {background:#fff; border:1px solid #fff !important}
+	.tagPickForm {float:right; padding-top:15px}
+	.formBtn {width:60px; padding:7px 0; font:14px "noto500", snas-serif; border:none; background:#b3b3b3; border-radius:5px; color:#000}
+	.rotateAction {transform:rotate(180deg); -ms-transform:rotate(180deg); -webkit-transform:rotate(180deg)}
+
+	/* infoContent - infoGraphWrap */
+	.infoGraphWrap {padding:30px 0 0 0; float:left; width:100%}
+	.graphTable {width:100%}
+	.graphTable th {width:50%; text-align:center; font:14px "noto500", sans-serif}
+	.ageGraph {width:100%}
+	.graphTitle {width:35% !important; font:14px "noto300", sans-serif !important}
+	.graphBar {padding:10px 0; background:#90a4ae; display:block; position:relative; float:left; margin-left:3px}
+	.graphName {font:13px "noto100", sans-serif; float:left; margin-left:5px}
+
+	/* infoContnet - itemRecommWrap */
+	.itemRecommWrap {padding:20px 0; float:left; width:100%}
+	.itemRecommWrap h4 {font:14px "noto500", sans-serif; padding-bottom:10px}
+	.swiper-slide img {width:100%}
+
+	/* actionContent */
+	.actionContent {position:fixed; bottom:10px; left:0; z-index:100; opacity:0}
+	.urlBtn {background:linear-gradient(#29B6F6, #2196F3); width:200px; margin:0 auto; display:block; padding:10px 0; text-align:center; border-radius:30px; color:#fff; box-shadow:0px 3px 10px #2d2d2d}
+	.urlBtn i {font-size:13px}
+	.urlBtn span {font:14px "noto500", sans-serif; padding-left:5px}
+}
+
+/* PC */
+@media (min-width: 1024px) {
+	/* pc only tag */
+	.pc_fullWrap {width:1020px; margin:30px auto 0; position:relative;}
+	.pcUrlBtn {transition:all 0.2s ease-in-out 0.1s; cursor:pointer; position:absolute; top:450px; right:180px; background:linear-gradient(#29B6F6, #2196F3); width:200px; margin:0 auto; display:block; padding:15px 0; text-align:center; color:#fff; box-shadow:0px 3px 10px #2d2d2d5c}
+	.pcUrlBtn:hover {transform:translateY(-3px); -webkit-transform:translateY(-3px); transition:all 0.2s ease-in-out 0.1s;}
+	.pcUrlBtn i {font-size:13px}
+	.pcUrlBtn span {font:14px "noto500", sans-serif; padding-left:5px} 
+	.actionContent {display:none}
+	
+	/* imgContent */
+	.imgContent {width:500px; float:left}
+	.imgContent .itemImg {width:500px; float:left; height:500px}
+	.imgContent .itemImg img {width:100%; height:500px}
+	
+	/* infoContent */
+	.infoContent {width:520px; float:left; /* box-shadow:0 -5px 14px #0000003d */}
+	.infoArea {width:90%; margin:0 auto}
+	
+	/* infoContent - likeBtn */
+	.likeBtn {cursor:pointer; position:absolute; right:30px; top:450px; background:#fff; width:120px; box-shadow:0px 3px 10px #2d2d2d5c; opacity:1}
+	.likeBtn i {padding:17px 0; display:block; text-align:center}
+	
+	/* infoContent - basicInfoWrap */
+	.basicInfoWrap {padding:25px 0 0 0}
+	.basicInfoWrap h3 {font:14px "noto100", sans-serif}
+	.basicInfoWrap h4 {font:22px "noto700", sans-serif}
+	.basicInfoWrap p {font:15px "Roboto", sans-serif; font-weight:700; margin-top:10px}
+	
+	/* infoContent - textInfoWrap */
+	.textInfoWrap {padding:15px 0 0 0}
+	.textInfoWrap table {width:100%; color:#353535}
+	.textInfoWrap th {width:20%; font:14px "noto500", sans-serif; text-align:left}
+	.textInfoWrap td {width:30%; font:14px "noto300", sans-serif; text-align:left}
+	
+	/* infoContent - typeTagWrap */
+	.typeTagWrap {padding:30px 0 0 0}
+	.tagView {width:100%}
+	.tagView tr {border-bottom:1px solid #e6e6e6}
+	.tagView th {text-align:left; width:30%}
+	.tagView td {width:70%; padding:10px 0 3px 0}
+	.tagView th i {font-size:20px; color:#03a9f4}
+	.tagView th span {font:14px "noto500", sans-serif; position:relative; margin-left:5px; top:-2.5px}
+	.tagView li {font:13px "noto300", sans-serif; float:left; padding:4px 12px; border:1px solid #9e9e9e; margin-right:7px; margin-bottom:7px; color:#252525; border-radius:15px}
+	.tagPickBtn {cursor:pointer; float:right; padding:10px 5px}
+	.tagPickBtn i {-webkit-transition:-webkit-transform .3s ease-in-out;
+    -ms-transition:-ms-transform .3s ease-in-out; transition:transform .3s ease-in-out}
+	.tagPickBtn span {font:14px "noto500", sans-serif; padding-right:7px}
+	.tagPickArea {position:relative; z-index:50; border-radius:10px; float:left; width:100%; background:#efefef; padding:15px; box-sizing:border-box; display:none}
+	.tagPickArea h4 {font:15px "noto500", sans-serif; text-align:center; margin-bottom:15px}
+	.tagPickArea ul li {cursor:pointer; float:left; padding:4px 10px; font:13px "noto100", sans-serif; border:1px solid #737373; border-radius:5px; margin-right:5px; margin-bottom:5px}
+	.tagSelect {background:#fff; border:1px solid #fff !important}
+	.tagPickForm {float:right; padding-top:15px}
+	.formBtn {cursor:pointer; width:60px; padding:7px 0; font:14px "noto500", snas-serif; border:none; background:#b3b3b3; border-radius:5px; color:#000}
+	.rotateAction {transform:rotate(180deg); -ms-transform:rotate(180deg); -webkit-transform:rotate(180deg)}
+
+	/* infoContent - infoGraphWrap */
+	.infoGraphWrap {padding:20px 0 0 0; float:left; width:520px; position:absolute; top:500px; right:0}
+	.graphTable {width:100%}
+	.graphTable th {width:50%; text-align:center; font:14px "noto500", sans-serif}
+	.ageGraph {width:100%}
+	.graphTitle {width:35% !important; font:14px "noto300", sans-serif !important}
+	.graphBar {padding:10px 0; background:#90a4ae; display:block; position:relative; float:left; margin-left:3px}
+	.graphName {font:13px "noto100", sans-serif; float:left; margin-left:5px}
+
+	/* infoContnet - itemRecommWrap */
+	.itemRecommWrap {padding:20px 0; float:left; width:500px; position:absolute; top:500px; left:0}
+	.itemRecommWrap h4 {font:14px "noto500", sans-serif; padding-bottom:10px}
+	.swiper-slide img {width:100%}
+}

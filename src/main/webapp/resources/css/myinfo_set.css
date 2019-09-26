@@ -1,0 +1,98 @@
+@charset "utf-8";
+/* MOBILE */
+@media (max-width: 575px){
+	body {background:#f3f3f3}
+	/* imgContent */
+	.imgContent {background:#000; width:100%; overflow:hidden}
+	.imgContent img {opacity:0.5; width:230%; display:block; margin:0 auto}
+	
+	/* myinfoContent */
+	.myinfoContent {background:#f3f3f3; float:left}
+	
+	/* myinfoContent - myinfoMenu */
+	.myinfoMenu {position:relative; z-index:50; width:100%; margin:-80px auto 0; padding:15px; box-sizing:border-box}
+	.myinfoMenu h3 {font:17px "Roboto", sans-serif; font-weight:700; margin-bottom:10px; color:#fff}
+	.myinfoMenu ul {background:#fff; border-radius:5px; overflow:hidden; box-shadow:0 0 6px #616161ad}
+	.myinfoMenu ul li {margin:15px 0 13px 0; float:left; width:33.3%; position:relative; border-right:1px solid #ececec; box-sizing:border-box}
+	.myinfoMenu ul li:last-child {border-right:none}
+	.myinfoMenu ul li a {display:block; text-align:center; color:#3a3a3a}
+	.myinfoMenu ul li a i {font-size:20px}
+	.myinfoMenu ul li a span {font:13px "noto100", sans-serif; padding:5px 0 0 0}
+	.myinfoMenu ul li:nth-child(3) a {color:#2196f3 !important; text-shadow:0 0 0px #a2a2a2}
+	
+	/* myinfoContent - myinfoArea */
+	.myinfoArea {padding:15px; box-sizing:border-box}
+	.listWrap {background:orange; float:left; background:#fff; width:100%; padding:10px; box-sizing:border-box; margin-bottom:15px; border-radius:5px; box-shadow:0 0 5px #73737387}
+	.listWrap table {width:100%}
+	.listWrap th {font:13px "noto300", sans-serif; text-align:right; box-sizing:border-box; padding-right:10px}
+	.inputBox {margin:10px 0; border:2px solid #d7d7d7; border-radius:4px; width:100%; font:14px "noto100", sans-serif; box-sizing:border-box; display:block; padding:8px 15px; float:left; -webkit-transition:border 0.5s; -moz-transition:border 0.5s; -o-transition:border 0.5s; transition:border 0.5s}
+	.inputBox:focus {border:2px solid #2196f3; box-shadow:0 0 6px #d4d4d49c; -webkit-transition:border 0.5s; -moz-transition:border 0.5s; -o-transition:border 0.5s; transition:border 0.5s}
+	.submitBtn {padding:13px 35px; font:17px "noto700", sans-serif; border:none; outline:none; border-radius:5px; float:right; margin-top:5px; background:#2196F3; box-shadow:0 0 10px #2b2b2b38; color:#fff; -webkit-transition:box-shadow 0.5s; -moz-transition:box-shadow 0.5s; -o-transition:border 0.5s; transition:box-shadow 0.5s}
+	.submitBtn:hover {-webkit-transition:box-shadow 0.5s; -moz-transition:box-shadow 0.5s; -o-transition:border 0.5s; transition:box-shadow 0.5s; box-shadow:0 0 10px #2b2b2b87}
+}
+
+/* TABLET */
+@media (min-width: 576px) and (max-width: 1023px) {
+	body {background:#f3f3f3}
+	/* imgContent */
+	.imgContent {background:#000; width:100%; overflow:hidden}
+	.imgContent img {opacity:0.5; width:100%; display:block; margin:0 auto}
+	
+	/* myinfoContent */
+	.myinfoContent {background:#f3f3f3; float:left}
+	
+	/* myinfoContent - myinfoMenu */
+	.myinfoMenu {position:relative; z-index:50; width:100%; margin:-80px auto 0; padding:15px; box-sizing:border-box}
+	.myinfoMenu h3 {font:17px "Roboto", sans-serif; font-weight:700; margin-bottom:10px; color:#fff}
+	.myinfoMenu ul {background:#fff; border-radius:5px; overflow:hidden; box-shadow:0 0 6px #616161ad}
+	.myinfoMenu ul li {margin:15px 0 13px 0; float:left; width:33.3%; position:relative; border-right:1px solid #ececec; box-sizing:border-box}
+	.myinfoMenu ul li:last-child {border-right:none}
+	.myinfoMenu ul li a {display:block; text-align:center; color:#3a3a3a}
+	.myinfoMenu ul li a i {font-size:20px}
+	.myinfoMenu ul li a span {font:13px "noto100", sans-serif; padding:5px 0 0 0}
+	.myinfoMenu ul li:nth-child(3) a {color:#2196f3 !important; text-shadow:0 0 0px #a2a2a2}
+	
+	/* myinfoContent - myinfoArea */
+	.myinfoArea {padding:15px; box-sizing:border-box}
+	.listWrap {background:orange; float:left; background:#fff; width:100%; padding:10px; box-sizing:border-box; margin-bottom:15px; border-radius:5px; box-shadow:0 0 5px #73737387}
+	.listWrap table {width:100%}
+	.listWrap th {font:13px "noto300", sans-serif; text-align:right; box-sizing:border-box; padding-right:10px; width:15%}
+	.inputBox {margin:10px 0; border:2px solid #d7d7d7; border-radius:4px; width:100%; font:14px "noto100", sans-serif; box-sizing:border-box; display:block; padding:8px 15px; float:left; -webkit-transition:border 0.5s; -moz-transition:border 0.5s; -o-transition:border 0.5s; transition:border 0.5s}
+	.inputBox:focus {border:2px solid #2196f3; box-shadow:0 0 6px #d4d4d49c; -webkit-transition:border 0.5s; -moz-transition:border 0.5s; -o-transition:border 0.5s; transition:border 0.5s}
+	.submitBtn {padding:13px 35px; font:17px "noto700", sans-serif; border:none; outline:none; border-radius:5px; float:right; margin-top:5px; background:#2196F3; box-shadow:0 0 10px #2b2b2b38; color:#fff; -webkit-transition:box-shadow 0.5s; -moz-transition:box-shadow 0.5s; -o-transition:border 0.5s; transition:box-shadow 0.5s}
+	.submitBtn:hover {-webkit-transition:box-shadow 0.5s; -moz-transition:box-shadow 0.5s; -o-transition:border 0.5s; transition:box-shadow 0.5s; box-shadow:0 0 10px #2b2b2b87}
+}
+
+/* PC */
+@media (min-width: 1024px) {
+	body {background:#f3f3f3}
+	/* imgContent */
+	.imgContent {background:#000; width:100%; overflow:hidden; height:280px}
+	.imgContent img {opacity:0.5; width:100%; display:block; margin:0 auto}
+	
+	/* myinfoContent */
+	.myinfoContent {background:#f3f3f3; float:left}
+	
+	/* myinfoContent - myinfoMenu */
+	.myinfoMenu {position:relative; z-index:50; width:400px; margin:-90px auto 0; padding:15px; box-sizing:border-box}
+	.myinfoMenu h3 {font:22px "Roboto", sans-serif; font-weight:700; margin-bottom:10px; color:#fff}
+	.myinfoMenu ul {background:#fff; border-radius:5px; overflow:hidden; box-shadow:0 0 6px #616161ad}
+	.myinfoMenu ul li {margin:15px 0 13px 0; float:left; width:33.3%; position:relative; border-right:1px solid #ececec; box-sizing:border-box}
+	.myinfoMenu ul li:last-child {border-right:none}
+	.myinfoMenu ul li a {display:block; text-align:center; color:#3a3a3a; cursor:pointer}
+	.myinfoMenu ul li a i {font-size:25px}
+	.myinfoMenu ul li a span {font:13px "noto100", sans-serif; padding:5px 0 0 0}
+	.myinfoMenu ul li:nth-child(3) a {color:#2196f3 !important; text-shadow:0 0 0px #a2a2a2}
+	
+	/* myinfoContent - myinfoArea */
+	.myinfoArea {padding:15px; box-sizing:border-box}
+	.listWrap {background:orange; float:left; background:#fff; width:100%; padding:10px; box-sizing:border-box; margin-bottom:15px; border-radius:5px; box-shadow:0 0 5px #73737387}
+	.listWrap table {width:100%}
+	.listWrap form {width:300px; margin:0 auto}
+	.listWrap th {font:13px "noto300", sans-serif; text-align:right; box-sizing:border-box; padding-right:10px; width:100px}
+	.listWrap td {width:200px}
+	.inputBox {margin:10px 0; border:2px solid #d7d7d7; border-radius:4px; width:100%; font:14px "noto100", sans-serif; box-sizing:border-box; display:block; padding:8px 15px; float:left; -webkit-transition:border 0.5s; -moz-transition:border 0.5s; -o-transition:border 0.5s; transition:border 0.5s}
+	.inputBox:focus {border:2px solid #2196f3; box-shadow:0 0 6px #d4d4d49c; -webkit-transition:border 0.5s; -moz-transition:border 0.5s; -o-transition:border 0.5s; transition:border 0.5s}
+	.submitBtn {padding:13px 35px; font:17px "noto700", sans-serif; border:none; outline:none; border-radius:5px; float:right; margin-top:5px; background:#2196F3; box-shadow:0 0 10px #2b2b2b38; color:#fff; -webkit-transition:box-shadow 0.5s; -moz-transition:box-shadow 0.5s; -o-transition:border 0.5s; transition:box-shadow 0.5s}
+	.submitBtn:hover {-webkit-transition:box-shadow 0.5s; -moz-transition:box-shadow 0.5s; -o-transition:border 0.5s; transition:box-shadow 0.5s; box-shadow:0 0 10px #2b2b2b87}
+}

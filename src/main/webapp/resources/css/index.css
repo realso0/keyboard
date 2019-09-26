@@ -1,0 +1,410 @@
+@charset "utf-8";
+
+.colorStrong {color:#585858}
+.colorLight {color:#efefef !important}
+/* sssssssssssssssssssssssssssssssssss */
+/* MOBILE */
+@media (max-width: 575px){
+	/* searchArea */
+	.searchArea {position:relative; height:250px; margin-top:50px}
+	.searchBg {width:100%; max-height:400px; margin-top:-30px}
+	.searchArea > h2 {font:20px "noto700", sans-serif; color:#fff; position:absolute; width:100%; text-align:center; z-index:50; top:18%; text-shadow:0 0 7px #292929a6}
+	.searchBgBox {background-image:url("./../images/bg02.jpg"); position:absolute; top:0; left:0; height:250px; width:100%; background-size:cover}
+	/* searchArea - searchUI */
+	.searchUI {width:100%; margin:0 auto; position:absolute; left:0; top:52%; z-index:105}
+	.searchInput {width:80%; height:40px; font:15px 'noto350', sans-serif; border-radius:50px; padding:10px 80px 10px 25px; border:none; box-shadow:0 6px 20px #0000005c; box-sizing:border-box; margin:0 auto; display:block}
+	.searchBtn {position:absolute; top:0; right:10%; display:block; width:40px; height:40px; border:none; background:#3ed4ff; border-radius:50px; outline:none; box-shadow:-2px 0px 10px 0px #0099c54f}
+	.searchBtn i {color:#fff}
+	
+	/* filterWrap */
+	.filterWrap {display:none; width:100%; position:absolute; top:60%; left:0; /* transform:translateX(-50%) */; z-index:100; overflow:hidden; margin-bottom:30px}
+	.filter {position:relative; width:80%; margin:0 auto; padding:20px; box-sizing:border-box; background:#fff; box-shadow:0 0 19px #9f9f9f; overflow:hidden}
+	.filter > h4 {font:14px "noto300", sans-serif; color:#605f6f; margin:10px 0 10px 0}
+	.filter > h4 > i {font:12px "noto500", sans-serif}
+	.filterInfo {font:12px "noto300", sans-serif; }
+	.tagSelectWrap li {font:12px "noto100", sans-serif; display:inline-block; padding:6px 20px; border-radius:50px; color:#686868; border:1px solid #dcdcdc; margin-bottom:10px}
+	.tagSelect {background:#2196f3 !important; color:#fff !important; border:1px solid #2196f3 !important}
+	.filterCloseBtn {font:12px "noto300", sans-serif; display:inline-block; padding:6px 20px; border-radius:50px; color:#636363; border:1px solid #dcdcdc; background:#dcdcdc; float:right; margin:0 0 45px 0; outline:none; float:right}
+	.filter form input {float:left}
+	.tagSearchBtn {position:absolute; left:0; bottom:0; width:100%; border:none; background:#fff; font:18px "noto500", sans-serif; height:50px; box-shadow:0 0 13px #ccc; outline:none}
+
+	/* MERBAU'S PICK */
+	.mPickArea {width:90%; margin:35px auto 0}
+	.mPickHeader {margin-bottom:15px}
+	.mPickHeader h3 {font:20px "noto500", sans-serif; float:left}
+	.mPickHeader h3 strong {font:20px "noto900", sans-serif}
+	.mPickHeader hr {width:60px; height:3px; background:#1565C0; float:left; display:block; border:none; position:relative; top:11px; left:10px}
+	
+	.mPickWrap ul {width:100%; overflow:hidden}
+	.mPickWrap ul li {float:left; width:30%; margin-right:5%; margin-bottom:10px}
+	.mPickWrap ul li:nth-child(3), .mPickWrap ul li:nth-child(6) {margin-right:0}
+	.mPickWrap ul li a {width:100%; display:block}
+	.mPickWrap ul li a img {max-width:100%; min-width:100%}
+	
+	.imgWrapper {background:#fff; position:relative; padding-top:100%; overflow: hidden}
+	.imgWrapper .imgBox {position:absolute; top:0; left:0; right:0; bottom:0; -webkit-transform: translate(50%,50%); -ms-transform: translate(50%,50%); transform: translate(50%,50%); }
+	.imgWrapper .imgBox img { position: absolute; top: 0; left: 0; max-width: 100%; height: auto; -webkit-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); transform: translate(-50%,-50%); }
+	
+	.mPickWrap ul li a dl {display:block; padding:5px; box-sizing:border-box}
+	.mPickWrap ul li a dl dt {font:12px "noto300", sans-serif; color:#4a4a4a}
+	.mPickWrap ul li a dl dd {font:12px "Roboto", sans-serif; color:#4a4a4a; font-weight:700}
+	
+	/* USER PRE 1 */
+	.userPreBg {position:relative}
+	.bgArea {position:relative; margin-bottom:30px}
+	.userPreArea {width:90%; margin:30px auto 0}
+	.userPreHeader {position:relative}
+	.userPreHeader h3 {color:#585858; padding-top:15px; font:23px "noto500", sans-serif; position:relative; z-index:10; line-height:35px}
+	.userPreHeader h3 strong {font:23px "noto900", sans-serif}
+	.userPreBox {position:absolute; top:0; left:0; width:100%; height:250px; background:#fff}
+	
+	.userPreList {margin-top:10px}
+	.userPreList ul li {float:left; width:30%; box-shadow:0 0 3px #b7b7b7}
+	.userPreList ul li:nth-child(1) {width:100%; margin-bottom:10px}
+	.userPreList ul li:nth-child(1) a {width:100%; position:relative; display:block}
+	.userPreList ul li:nth-child(1) img {width:100%}
+	.userPreList ul li:nth-child(1) dl {position:absolute; bottom:0; left:0; width:100%; color:#fff !important; background:#0e0e0e80; padding:10px; box-sizing:border-box}
+	.userPreList ul li:nth-child(1) dt {font:13px "noto350", sans-serif}
+	.userPreList ul li:nth-child(1) dd {font:13px "Roboto", sans-serif; font-weight:400}
+	.userPreList li:nth-child(2), .userPreList li:nth-child(3) {width:48%}
+	.userPreList li:nth-child(2) {margin-right:4%} 
+	.userPreList li:nth-child(2) a, .userPreList li:nth-child(3) a {width:100%}
+	.userPreList li:nth-child(2) img, .userPreList li:nth-child(3) img {width:100%}
+	.userPreList li:nth-child(2) dl, .userPreList li:nth-child(3) dl {padding:10px; box-sizing:border-box}
+	.userPreList li:nth-child(2) dt, .userPreList li:nth-child(3) dt {font:12px "noto300", sans-serif; color:#4a4a4a}
+	.userPreList li:nth-child(2) dd, .userPreList li:nth-child(3) dd {font:12px "Roboto", sans-serif; color:#4a4a4a}
+	.userPreList li:nth-child(4) {width:100%; margin-top:15px}
+	.userPreList li:nth-child(4) a {outline:1px solid #afafaf; display:block}
+	.userPreList li:nth-child(4) p {text-align:center; font:13px "noto300", sans-serif; padding:15px 0; color:gray}
+	
+	/* USER PRE 2 */
+	.userPreBg {position:relative; margin-bottom:30px}
+	.userPreArea2 {width:90%; margin:30px auto 0}
+	.userPreArea2 .userPreHeader {position:relative}
+	.userPreArea2 .userPreHeader h3 {color:#585858; padding-top:15px; font:23px "noto500", sans-serif; position:relative; z-index:10; line-height:35px}
+	.userPreArea2 .userPreHeader h3 strong {font:23px "noto900", sans-serif}
+	.userPreBox2 {position:absolute; top:0; left:0; width:100%; height:250px; background:#fff}
+	
+	.userPreList2 {margin-top:10px}
+	.userPreList2 ul li {float:left; width:30%; box-shadow:0 0 3px #b7b7b7}
+	.userPreList2 ul li:nth-child(1) {width:100%; margin-bottom:10px}
+	.userPreList2 ul li:nth-child(1) a {width:100%; position:relative; display:block}
+	.userPreList2 ul li:nth-child(1) img {width:100%}
+	.userPreList2 ul li:nth-child(1) dl {position:absolute; bottom:0; left:0; width:100%; color:#fff !important; background:#0e0e0e80; padding:10px; box-sizing:border-box}
+	.userPreList2 ul li:nth-child(1) dt {font:13px "noto350", sans-serif}
+	.userPreList2 ul li:nth-child(1) dd {font:13px "Roboto", sans-serif; font-weight:400}
+	.userPreList2 li:nth-child(2), .userPreList2 li:nth-child(3) {width:48%}
+	.userPreList2 li:nth-child(2) {margin-right:4%} 
+	.userPreList2 li:nth-child(2) a, .userPreList2 li:nth-child(3) a {width:100%}
+	.userPreList2 li:nth-child(2) img, .userPreList2 li:nth-child(3) img {width:100%}
+	.userPreList2 li:nth-child(2) dl, .userPreList2 li:nth-child(3) dl {padding:5px; box-sizing:border-box}
+	.userPreList2 li:nth-child(2) dt, .userPreList2 li:nth-child(3) dt {font:12px "noto300", sans-serif; color:#4a4a4a}
+	.userPreList2 li:nth-child(2) dd, .userPreList2 li:nth-child(3) dd {font:12px "Roboto", sans-serif; color:#4a4a4a}
+	.userPreList2 li:nth-child(4) {width:100%; margin-top:15px}
+	.userPreList2 li:nth-child(4) a {outline:1px solid #afafaf; display:block}
+	.userPreList2 li:nth-child(4) p {text-align:center; font:13px "noto300", sans-serif; padding:15px 0; color:gray}
+
+	/* YOU'RE BRAND */
+	.brandBg {position:relative; background-image:url("./../images/ikea_brand2.jpg"); background-size:cover}
+	.brandArea {width:90%; margin:0 auto}
+	.brandHeader {width:100%}
+	.brandHeader h3 {padding-top:350px; width:100%; font:25px "Roboto", sans-serif; font-weight:700; text-align:center}
+	.brandHeader h4 {width:100%; font:14px "noto100", sans-serif; text-align:center; margin-top:10px}
+	.brandList {margin-top:20px; padding-bottom:30px}
+	.brandList li {float:left; width:30%; margin-right:5%}
+	.brandList li:nth-child(3) {margin-right:0}
+	.brandList li a {width:100%; display:block}
+	.brandList li a img {width:100%}
+	.brandList li dl {padding:5px; box-sizing:border-box; color:#4a4a4a}
+	.brandList li dt {font:13px "noto350", sans-serif}
+	.brandList li dd {font:13px "Roboto", sans-serif; font-weight:400}
+	
+	/* TODAY ANYTHING */
+	.anyBg {position:relative}
+	.anyBgBox {width:100%; height:400px; background:#B0E0E6; position:absolute; top:0; left:0}
+	.anyArea {width:90%; margin:100px auto 50px}
+	.anyHeader {width:100%; position:relative; z-index:50px; padding-top:100px; color:#fff}
+	.anyHeader h3 {font:45px "Roboto", sans-serif; font-weight:700; text-align:center; text-shadow:0 0 20px #26c6da78}
+	.anyHeader h4 {width:100%; font:18px "noto100", sans-serif; text-align:center; margin:10px 0; color:#3e3e3e}
+	.anyHeader p {font:30px "Roboto", sans-serif; font-weight:700; text-align:center}
+	.anyList {margin-top:30px; position:relative; z-index:55px}
+	.anyList li {float:left; width:48%; height:48%; margin-bottom:10px; margin-right:4%; border-radius:50%; overflow:hidden; position:relative; box-shadow:0 0 15px #00000026}
+	.anyList li:nth-child(2n) {margin-right:0}
+	.anyList li a {width:100%; display:block; cursor:pointer}
+	.anyList li a img {width:100%}
+	.anyList li dl {width:100%; padding:10px 0; box-sizing:border-box; color:#fff; position:absolute; bottom:0; left:0; text-align:center; background:#00000059}
+	.anyList li dt {font:13px "noto350", sans-serif}
+	.anyList li dd {font:13px "Roboto", sans-serif; font-weight:400}
+}
+
+/* TABLET */
+@media (min-width: 576px) and (max-width: 1023px) {
+	/* searchArea */
+	/* <img class="searchBg" src="./resources/images/bg02.jpg" alt="search area background image"> */
+	.searchArea {position:relative; height:300px}
+	.searchArea > h2 {top:18%; font:30px "noto700", sans-serif; color:#fff; text-align:center; position:relative; z-index:50; text-shadow:0 0 7px #292929a6}
+	.searchBgBox {background-image:url("./../images/bg02.jpg"); position:absolute; top:0; left:0; height:300px; width:100%; background-size:cover; background-position:0 -100px; background-repeat:no-repeat}
+	/* searchArea - searchUI */
+	.searchUI {width:60%; margin:0 auto; position:relative; left:0; top:80px; z-index:55}
+	.searchInput {width:80%; height:40px; font:15px 'noto350', sans-serif; border-radius:50px; padding:10px 80px 10px 25px; border:none; box-shadow:0 6px 20px #0000005c; box-sizing:border-box; margin:0 auto; display:block}
+	.searchBtn {position:absolute; top:0; right:10%; display:block; width:40px; height:40px; border:none; background:#3ed4ff; border-radius:50px; outline:none; box-shadow:-2px 0px 10px 0px #0099c54f}
+	.searchBtn i {color:#fff}
+	/* filterWrap */
+	/*.filterWrap {width:100%; position:absolute; top:0; left:0; background:red} */
+	.filterWrap {display:none; width:100%; position:relative; top:19%; left:0; /* transform:translateX(-50%) */; z-index:50}
+	.filter {position:relative; width:48%; margin:0 auto; padding:35px 20px 20px 20px; box-sizing:border-box; background:#fff; box-shadow:0 0 19px #9f9f9f; overflow:hidden}
+	.filter > h4 {font:14px "noto300", sans-serif; color:#605f6f; margin:10px 0 10px 0}
+	.filter > h4 > i {font:12px "noto500", sans-serif}
+	.filterInfo {font:12px "noto300", sans-serif; }
+	.tagSelectWrap li {font:12px "noto100", sans-serif; display:inline-block; padding:6px 20px; border-radius:50px; color:#686868; border:1px solid #dcdcdc; margin-bottom:10px}
+	.tagSelect {background:#2196f3 !important; color:#fff !important; border:1px solid #2196f3 !important}
+	.filterCloseBtn {font:12px "noto300", sans-serif; display:inline-block; padding:6px 20px; border-radius:50px; color:#636363; border:1px solid #dcdcdc; background:#dcdcdc; float:right; margin:0 0 45px 0; outline:none; float:right}
+	.filter form input {float:left}
+	.tagSearchBtn {position:absolute; left:0; bottom:0; width:100%; border:none; background:#fff; font:18px "noto500", sans-serif; height:50px; box-shadow:0 0 13px #ccc; outline:none}
+
+	/* MERBAU'S PICK */
+	.mPickArea {width:90%; margin:35px auto 0}
+	.mPickHeader {margin-bottom:15px}
+	.mPickHeader h3 {font:20px "noto500", sans-serif; float:left}
+	.mPickHeader h3 strong {font:20px "noto900", sans-serif}
+	.mPickHeader hr {width:60px; height:3px; background:#1565C0; float:left; display:block; border:none; position:relative; top:11px; left:10px}
+	
+	.mPickWrap ul {width:100%; overflow:hidden}
+	.mPickWrap ul li {float:left; width:30%; margin-right:5%; margin-bottom:10px}
+	.mPickWrap ul li:nth-child(3), .mPickWrap ul li:nth-child(6) {margin-right:0}
+	.mPickWrap ul li a {width:100%; display:block}
+	.mPickWrap ul li a img {max-width:100%; min-width:100%}
+	
+	.mPickWrap ul li a dl {display:block; padding:5px; box-sizing:border-box}
+	.mPickWrap ul li a dl dt {font:12px "noto300", sans-serif; color:#4a4a4a}
+	.mPickWrap ul li a dl dd {font:12px "Roboto", sans-serif; color:#4a4a4a; font-weight:700}
+	
+	/* USER PRE 1 */
+	.userPreBg {position:relative; margin-bottom:30px}
+	.userPreArea {width:90%; margin:30px auto 0}
+	.userPreHeader {position:relative}
+	.userPreHeader h3 {color:#585858; padding-top:15px; font:23px "noto500", sans-serif; position:relative; z-index:10; line-height:35px}
+	.userPreHeader h3 strong {font:23px "noto900", sans-serif}
+	.userPreBox {position:absolute; top:0; left:0; width:100%; height:250px; background:#fff}
+	
+	.userPreList {margin-top:10px}
+	.userPreList ul li {float:left; width:30%; box-shadow:0 0 3px #b7b7b7}
+	.userPreList ul li:nth-child(1) {width:100%; margin-bottom:10px}
+	.userPreList ul li:nth-child(1) a {width:100%; position:relative; display:block}
+	.userPreList ul li:nth-child(1) img {width:100%}
+	.userPreList ul li:nth-child(1) dl {position:absolute; bottom:0; left:0; width:100%; color:#fff !important; background:#0e0e0e80; padding:10px; box-sizing:border-box}
+	.userPreList ul li:nth-child(1) dt {font:13px "noto350", sans-serif}
+	.userPreList ul li:nth-child(1) dd {font:13px "Roboto", sans-serif; font-weight:400}
+	.userPreList li:nth-child(2), .userPreList li:nth-child(3) {width:48%}
+	.userPreList li:nth-child(2) {margin-right:4%} 
+	.userPreList li:nth-child(2) a, .userPreList li:nth-child(3) a {width:100%}
+	.userPreList li:nth-child(2) img, .userPreList li:nth-child(3) img {width:100%}
+	.userPreList li:nth-child(2) dl, .userPreList li:nth-child(3) dl {padding:5px; box-sizing:border-box}
+	.userPreList li:nth-child(2) dt, .userPreList li:nth-child(3) dt {font:12px "noto300", sans-serif; color:#4a4a4a}
+	.userPreList li:nth-child(2) dd, .userPreList li:nth-child(3) dd {font:12px "Roboto", sans-serif; color:#4a4a4a}
+	.userPreList li:nth-child(4) {width:100%; margin-top:10px}
+	.userPreList li:nth-child(4) a {outline:1px solid #afafaf; display:block}
+	.userPreList li:nth-child(4) p {text-align:center; font:13px "noto300", sans-serif; padding:15px 0; color:gray}
+	
+	/* USER PRE 2 */
+	.userPreBg {position:relative; margin-bottom:30px}
+	.userPreArea2 {width:90%; margin:30px auto 0}
+	.userPreArea2 .userPreHeader {position:relative}
+	.userPreArea2 .userPreHeader h3 {color:#585858; padding-top:15px; font:23px "noto500", sans-serif; position:relative; z-index:10; line-height:35px}
+	.userPreArea2 .userPreHeader h3 strong {font:23px "noto900", sans-serif}
+	.userPreBox2 {position:absolute; top:0; left:0; width:100%; height:250px; background:#fff}
+	
+	.userPreList2 {margin-top:10px}
+	.userPreList2 ul li {float:left; width:30%; box-shadow:0 0 3px #b7b7b7}
+	.userPreList2 ul li:nth-child(1) {width:100%; margin-bottom:10px}
+	.userPreList2 ul li:nth-child(1) a {width:100%; position:relative; display:block}
+	.userPreList2 ul li:nth-child(1) img {width:100%}
+	.userPreList2 ul li:nth-child(1) dl {position:absolute; bottom:0; left:0; width:100%; color:#fff !important; background:#0e0e0e80; padding:10px; box-sizing:border-box}
+	.userPreList2 ul li:nth-child(1) dt {font:13px "noto350", sans-serif}
+	.userPreList2 ul li:nth-child(1) dd {font:13px "Roboto", sans-serif; font-weight:400}
+	.userPreList2 li:nth-child(2), .userPreList2 li:nth-child(3) {width:48%}
+	.userPreList2 li:nth-child(2) {margin-right:4%} 
+	.userPreList2 li:nth-child(2) a, .userPreList2 li:nth-child(3) a {width:100%}
+	.userPreList2 li:nth-child(2) img, .userPreList2 li:nth-child(3) img {width:100%}
+	.userPreList2 li:nth-child(2) dl, .userPreList2 li:nth-child(3) dl {padding:5px; box-sizing:border-box}
+	.userPreList2 li:nth-child(2) dt, .userPreList2 li:nth-child(3) dt {font:12px "noto300", sans-serif; color:#4a4a4a}
+	.userPreList2 li:nth-child(2) dd, .userPreList2 li:nth-child(3) dd {font:12px "Roboto", sans-serif; color:#4a4a4a}
+	.userPreList2 li:nth-child(4) {width:100%; margin-top:10px}
+	.userPreList2 li:nth-child(4) a {outline:1px solid #afafaf; display:block}
+	.userPreList2 li:nth-child(4) p {text-align:center; font:13px "noto300", sans-serif; padding:15px 0; color:gray}
+
+	/* YOU'RE BRAND */
+	.brandBg {position:relative; background-image:url("./../images/ikea_brand2.jpg"); background-size:cover}
+	.brandArea {width:90%; margin:0 auto}
+	.brandHeader {width:100%}
+	.brandHeader h3 {padding-top:350px; width:100%; font:25px "Roboto", sans-serif; font-weight:700; text-align:center}
+	.brandHeader h4 {width:100%; font:14px "noto100", sans-serif; text-align:center; margin-top:10px}
+	.brandList {margin-top:20px; padding-bottom:30px}
+	.brandList li {float:left; width:30%; margin-right:5%}
+	.brandList li:nth-child(3) {margin-right:0}
+	.brandList li a {width:100%; display:block}
+	.brandList li a img {width:100%}
+	
+	.imgWrapper {background:#fff; position:relative; padding-top:100%; overflow: hidden}
+	.imgWrapper .imgBox {position:absolute; top:0; left:0; right:0; bottom:0; -webkit-transform: translate(50%,50%); -ms-transform: translate(50%,50%); transform: translate(50%,50%); }
+	.imgWrapper .imgBox img { position: absolute; top: 0; left: 0; max-width: 100%; height: auto; -webkit-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); transform: translate(-50%,-50%); }
+	
+	.brandList li dl {padding:5px; box-sizing:border-box; color:#4a4a4a}
+	.brandList li dt {font:13px "noto350", sans-serif}
+	.brandList li dd {font:13px "Roboto", sans-serif; font-weight:400}
+	
+	/* TODAY ANYTHING */
+	.anyBg {position:relative}
+	.anyBgBox {width:100%; height:400px; background:#B0E0E6; position:absolute; top:0; left:0}
+	.anyArea {width:90%; margin:100px auto 50px}
+	.anyHeader {width:100%; position:relative; z-index:50px; padding-top:100px; color:#fff}
+	.anyHeader h3 {font:45px "Roboto", sans-serif; font-weight:700; text-align:center; text-shadow:0 0 20px #26c6da78}
+	.anyHeader h4 {width:100%; font:18px "noto100", sans-serif; text-align:center; margin:10px 0; color:#3e3e3e}
+	.anyHeader p {font:30px "Roboto", sans-serif; font-weight:700; text-align:center}
+	.anyList {margin-top:30px; position:relative; z-index:55px}
+	.anyList li {float:left; width:22%; height:22%; margin-bottom:10px; margin-left:4%; border-radius:50%; overflow:hidden; position:relative; box-shadow:0 0 15px #00000026}
+	.anyList li:first-child {margin-left:0}
+	.anyList li a {width:100%; display:block; cursor:pointer}
+	.anyList li a img {width:100%}
+	.anyList li dl {width:100%; padding:10px 0; box-sizing:border-box; color:#fff; position:absolute; bottom:0; left:0; text-align:center; background:#00000059}
+	.anyList li dt {font:13px "noto350", sans-serif}
+	.anyList li dd {font:13px "Roboto", sans-serif; font-weight:400}
+}
+
+/* PC */
+@media (min-width: 1024px) {
+	/* searchArea */
+	.searchArea {position:relative; height:500px}
+	.searchBgBox {width:100%; height:500px; background-image:url("./../images/bg02.jpg"); position:absolute; top:0; left:0; background-repeat:no-repeat; background-size:cover}
+	.searchArea > h2 {font:40px "noto700", sans-serif; color:#fff; position:absolute; width:100%; text-align:center; z-index:50; top:18%; text-shadow:0 0 7px #292929a6}
+	/* searchArea - searchUI */
+	.searchUI {width:100%; margin:0 auto; position:absolute; left:0; top:52%; z-index:150}
+	.searchInput {width:60%; height:50px; font:15px 'noto350', sans-serif; border-radius:50px; padding:10px 80px 10px 25px; border:none; box-shadow:0 6px 20px #0000005c; box-sizing:border-box; margin:0 auto; display:block}
+	.searchBtn {position:absolute; top:0; right:20%; display:block; width:50px; height:50px; border:none; background:#3ed4ff; border-radius:50px; outline:none; box-shadow:-2px 0px 10px 0px #0099c54f}
+	.searchBtn i {color:#fff}
+	
+	/* filterWrap */
+	/*.filterWrap {width:100%; position:absolute; top:0; left:0; background:red} */
+	.filterWrap {display:none; width:100%; position:absolute; top:281px; left:0; /* transform:translateX(-50%) */; z-index:100; margin-bottom:30px}
+	.filter {position:relative; width:60%; margin:0 auto; padding:35px 20px 20px 20px; box-sizing:border-box; background:#fff; box-shadow:0 0 19px #4a4a4a; overflow:hidden}
+	.filter > h4 {font:14px "noto300", sans-serif; color:#605f6f; margin:10px 0 10px 0}
+	.filter > h4 > i {font:12px "noto500", sans-serif}
+	.filter form {display:block}
+	.filterInfo {font:12px "noto300", sans-serif}
+	.tagSelectWrap li {cursor:pointer; font:14px "noto350", sans-serif; display:inline-block; padding:6px 20px; border-radius:50px; color:#686868; border:1px solid #dcdcdc; margin-bottom:10px}
+	.tagSelect {background:#2196f3 !important; color:#fff !important; border:1px solid #2196f3 !important}
+	.filterCloseBtn {cursor:pointer; font:12px "noto300", sans-serif; display:inline-block; padding:6px 20px; border-radius:50px; color:#636363; border:1px solid #dcdcdc; background:#dcdcdc; float:right; margin:0 0 45px 0; outline:none; float:right}
+	.filter form input {float:left}
+	.tagSearchBtn {cursor:pointer; position:absolute; left:0; bottom:0; width:100%; border:none; background:#fff; font:18px "noto500", sans-serif; height:50px; box-shadow:0 0 13px #ccc; outline:none}
+
+	/* MERBAU'S PICK */
+	.mPickArea {width:1020px; margin:100px auto 0}
+	.mPickHeader {float:left; width:250px; position:relative}
+	.mPickHeader h3 {font:25px "noto500", sans-serif; float:left}
+	.mPickHeader h3 strong {font:25px "noto900", sans-serif}
+	.mPickHeader hr {width:70px; height:3px; background:#1565C0; float:none; display:block; border:none; position:absolute; top:50px; left:0}
+	
+	.mPickWrap {float:left; width:770px}
+	.mPickWrap ul {width:100%; overflow:hidden}
+	.mPickWrap ul li {float:left; width:231px; margin-right:38.5px; margin-bottom:10px; cursor:pointer}
+	.mPickWrap ul li:nth-child(3), .mPickWrap ul li:nth-child(6) {margin-right:0}
+	.mPickWrap ul li a {width:100%; display:block; cursor:pointer}
+	
+	.imgWrapper {background:#fff; position:relative; padding-top:100%; overflow: hidden}
+	.imgWrapper .imgBox {position:absolute; top:0; left:0; right:0; bottom:0; -webkit-transform: translate(50%,50%); -ms-transform: translate(50%,50%); transform: translate(50%,50%); }
+	.imgWrapper .imgBox img { position: absolute; top: 0; left: 0; max-width: 100%; height: auto; -webkit-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); transform: translate(-50%,-50%); }
+	
+	.mPickWrap ul li a dl {display:block; padding:5px; box-sizing:border-box}
+	.mPickWrap ul li a dl dt {font:14px "noto300", sans-serif; color:#4a4a4a; margin-bottom:5px}
+	.mPickWrap ul li a dl dd {font:14px "Roboto", sans-serif; color:#4a4a4a; font-weight:700}
+	
+	/* USER PRE 1 */
+	.userPreBg {position:relative; margin:90px auto 0}
+	.userPreArea {width:1020px; margin:0 auto 0}
+	.userPreHeader {position:relative; display:inline-block; float:right; top:100px; left:-10px}
+	.userPreHeader h3 {color:#585858; padding-top:15px; font:38px "noto500", sans-serif; position:relative; z-index:10; line-height:35px}
+	.userPreHeader h3 strong {font:38px "noto900", sans-serif}
+	.userPreBox {position:absolute; top:0; left:0; width:100%; height:250px; background:#fff}
+	
+	.userPreList {position:relative; z-index:10}
+	.userPreList ul {padding-top:80px}
+	.userPreList ul li {float:left; margin-left:20px; cursor:pointer; box-shadow:0 0 3px #b7b7b7}
+	.userPreList ul li:nth-child(1) {width:450px; height:450px; margin-left:0; box-shadow:0 0 15px #7b7b7bb3}
+	.userPreList ul li:nth-child(1) a {width:100%; position:relative; display:block; cursor:pointer}
+	.userPreList ul li:nth-child(1) img {width:100%}
+	.userPreList ul li:nth-child(1) dl {position:absolute; bottom:0; left:0; width:100%; color:#fff !important; background:#0e0e0e80; padding:10px; box-sizing:border-box}
+	.userPreList ul li:nth-child(1) dt {font:15px "noto350", sans-serif; padding-bottom:5px}
+	.userPreList ul li:nth-child(1) dd {font:15px "Roboto", sans-serif; font-weight:400}
+	
+	.userPreList li:nth-child(2), .userPreList li:nth-child(3) {width:170px; position:relative; bottom:-212px}
+	.userPreList li:nth-child(2) a, .userPreList li:nth-child(3) a {width:100%; display:block; cursor:pointer}
+	.userPreList li:nth-child(2) img, .userPreList li:nth-child(3) img {width:100%}
+	.userPreList li:nth-child(2) dl, .userPreList li:nth-child(3) dl {padding:5px; box-sizing:border-box}
+	.userPreList li:nth-child(2) dt, .userPreList li:nth-child(3) dt {font:13px "noto300", sans-serif; color:#4a4a4a}
+	.userPreList li:nth-child(2) dd, .userPreList li:nth-child(3) dd {font:13px "Roboto", sans-serif; color:#4a4a4a}
+	
+	.userPreList li:nth-child(4) {width:170px; height:170px; display:block; position:relative; bottom:-212px}
+	.userPreList li:nth-child(4) a {outline:1px solid #c7c7c7; display:block; cursor:pointer}
+	.userPreList li:nth-child(4) p {text-align:center; font:13px "noto300", sans-serif; padding:75px 0; color:gray}
+	
+	/* USER PRE 2 */
+	.userPreBg {position:relative; margin:90px auto 0}
+	.userPreArea2 {width:1020px; margin:0 auto 0}
+	.userPreArea2 .userPreHeader {position:relative; display:inline-block; float:left; top:100px; left:-10px}
+	.userPreArea2 .userPreHeader h3 {color:#585858; padding-top:15px; font:38px "noto500", sans-serif; position:relative; z-index:10; line-height:35px}
+	.userPreArea2 .userPreHeader h3 strong {font:38px "noto900", sans-serif}
+	.userPreBox2 {position:absolute; top:0; left:0; width:100%; height:250px; background:#fff}
+	
+	.userPreList2 {position:relative; z-index:10}
+	.userPreList2 ul {padding-top:80px}
+	.userPreList2 ul li {float:right; margin-right:20px; box-shadow:0 0 3px #b7b7b7}
+	.userPreList2 ul li:nth-child(1) {width:450px; height:450px; margin-right:0; box-shadow:0 0 15px #7b7b7bb3}
+	.userPreList2 ul li:nth-child(1) a {width:100%; position:relative; display:block; cursor:pointer}
+	.userPreList2 ul li:nth-child(1) img {width:100%}
+	.userPreList2 ul li:nth-child(1) dl {position:absolute; bottom:0; left:0; width:100%; color:#fff !important; background:#0e0e0e80; padding:10px; box-sizing:border-box}
+	.userPreList2 ul li:nth-child(1) dt {font:15px "noto350", sans-serif; padding-bottom:5px}
+	.userPreList2 ul li:nth-child(1) dd {font:15px "Roboto", sans-serif; font-weight:400}
+	
+	.userPreList2 li:nth-child(2), .userPreList2 li:nth-child(3) {width:170px; position:relative; bottom:-212px}
+	.userPreList2 li:nth-child(2) a, .userPreList2 li:nth-child(3) a {width:100%; display:block; cursor:pointer}
+	.userPreList2 li:nth-child(2) img, .userPreList2 li:nth-child(3) img {width:100%}
+	.userPreList2 li:nth-child(2) dl, .userPreList2 li:nth-child(3) dl {padding:5px; box-sizing:border-box}
+	.userPreList2 li:nth-child(2) dt, .userPreList2 li:nth-child(3) dt {font:13px "noto300", sans-serif; color:#4a4a4a}
+	.userPreList2 li:nth-child(2) dd, .userPreList2 li:nth-child(3) dd {font:13px "Roboto", sans-serif; color:#4a4a4a}
+	
+	.userPreList2 li:nth-child(4) {width:170px; height:170px; display:block; position:relative; bottom:-212px}
+	.userPreList2 li:nth-child(4) a {outline:1px solid #c7c7c7; display:block; cursor:pointer}
+	.userPreList2 li:nth-child(4) p {text-align:center; font:13px "noto300", sans-serif; padding:75px 0; color:gray}
+
+	/* YOU'RE BRAND */
+	.brandBg {position:relative; background:url("./../images/ikea_brand_pc_bg.png"), #b5c6af; height:650px; background-repeat:no-repeat; background-position:-100px 0}
+	.brandArea {width:1020px; margin:100px auto 0; height:650px}
+	.brandHeader {width:100%}
+	.brandHeader h3 {padding-top:100px; width:100%; font:45px "Roboto", sans-serif; font-weight:700; text-align:center}
+	.brandHeader h4 {width:100%; font:18px "noto100", sans-serif; text-align:center; margin-top:10px}
+	.brandList {margin-top:20px; padding-bottom:30px}
+	.brandList li {float:left; width:30%; margin-right:5%}
+	.brandList li:nth-child(3) {margin-right:0}
+	.brandList li a {width:100%; display:block; cursor:pointer}
+	.brandList li a img {width:100%}
+	.brandList li dl {padding:5px; box-sizing:border-box; color:#4a4a4a}
+	.brandList li dt {font:13px "noto350", sans-serif}
+	.brandList li dd {font:13px "Roboto", sans-serif; font-weight:400}
+	
+	/* TODAY ANYTHING */
+	.anyBg {position:relative}
+	.anyBgBox {width:100%; height:400px; background:#B0E0E6; position:absolute; top:0; left:0}
+	.anyArea {width:1020px; margin:100px auto 50px}
+	.anyHeader {width:100%; position:relative; z-index:50px; padding-top:100px; color:#fff}
+	.anyHeader h3 {font:45px "Roboto", sans-serif; font-weight:700; text-align:center; text-shadow:0 0 20px #26c6da78}
+	.anyHeader h4 {width:100%; font:18px "noto100", sans-serif; text-align:center; margin:10px 0; color:#3e3e3e}
+	.anyHeader p {font:30px "Roboto", sans-serif; font-weight:700; text-align:center}
+	.anyList {margin-top:30px; position:relative; z-index:55px}
+	.anyList li {float:left; width:240px; height:240px; margin-bottom:10px; margin-left:20px; border-radius:50%; overflow:hidden; position:relative; box-shadow:0 0 15px #00000026}
+	.anyList li:first-child {margin-left:0}
+	.anyList li a {width:100%; display:block; cursor:pointer}
+	.anyList li a img {width:100%}
+	.anyList li dl {width:100%; padding:10px 0; box-sizing:border-box; color:#fff; position:absolute; bottom:0; left:0; text-align:center; background:#00000059}
+	.anyList li dt {font:13px "noto350", sans-serif}
+	.anyList li dd {font:13px "Roboto", sans-serif; font-weight:400}
+}
