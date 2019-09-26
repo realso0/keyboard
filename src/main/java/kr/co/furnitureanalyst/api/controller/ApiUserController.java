@@ -27,7 +27,7 @@ public class ApiUserController {
 		UserVo userVo = (UserVo) session.getAttribute("authUser");
 		String[] listEX = userViewTag.replace("#", " ").trim().split(" ");
 		List<String> listTag = new ArrayList<String>(Arrays.asList(listEX));
-		userService.timeChk(userVo.getUserId(),listTag);
+		//userService.timeChk(userVo.getUserId(),listTag);
 	}
 	
 	@ResponseBody

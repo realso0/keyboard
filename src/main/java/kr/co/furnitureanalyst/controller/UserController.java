@@ -36,7 +36,7 @@ public class UserController {
 	@RequestMapping("join")
 	public String join(@ModelAttribute UserVo newUserVo, @RequestParam("year") String year,
 			@RequestParam("month") String month, @RequestParam("day") String day) {
-		System.out.println("컨트롤러 join진입");
+		//System.out.println("컨트롤러 join진입");
 		newUserVo.setBirthday(year + "-" + month + "-" + day);
 
 		userService.join(newUserVo);
