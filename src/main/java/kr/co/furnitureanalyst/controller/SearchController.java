@@ -28,7 +28,7 @@ public class SearchController {
 	@RequestMapping("searchresult")//검색결과창
 	public String searchResultForm(@RequestParam("furType") String furType, @RequestParam("furBrand") String[] furBrand,
 			@RequestParam("furTag") String[] furTag, Model model) {
-		log.debug(furType.toString() + Arrays.toString(furBrand) + Arrays.toString(furTag));
+		//log.debug(furType.toString() + Arrays.toString(furBrand) + Arrays.toString(furTag));
 		//log.debug("*********"+searchService.tagSearch(furType, furBrand, furTag).toString());
 		model.addAttribute("furnitureList", searchService.tagSearch(furType, furBrand, furTag));
 		return "search/search_result";
