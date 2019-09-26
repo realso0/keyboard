@@ -16,12 +16,12 @@ public class LoginInterceptor extends HandlerInterceptorAdapter {
 	
 		try {
 			if(request.getSession().getAttribute("authUser")==null) {
-				//response.sendRedirect("/furnitureanalyst/user/loginform");
+				response.sendRedirect("/furnitureanalyst/user/loginform");
 			return false;
 			}
-		}catch (Exception e) {
-			e.printStackTrace();
-		}
+		//}catch (Exception e) {
+		//	e.printStackTrace();
+		//}
 		return true;
 		
 	}

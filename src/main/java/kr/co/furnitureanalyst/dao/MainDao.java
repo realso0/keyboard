@@ -30,10 +30,10 @@ public class MainDao {
 	
 	// MongoDB Connection
 	public MongoCollection<Document> mongoConnect(String collectionName){
-		MongoClientURI connectionString = new MongoClientURI("mongodb://192.168.1.57:27017");
-		MongoClient mongoClient = new MongoClient(connectionString);
-		MongoDatabase database = mongoClient.getDatabase("merbau");
-		return database.getCollection(collectionName);
+		//MongoClientURI connectionString = new MongoClientURI("mongodb://192.168.1.57:27017");
+		//MongoClient mongoClient = new MongoClient(connectionString);
+		//MongoDatabase database = mongoClient.getDatabase("merbau");
+		//return database.getCollection(collectionName);
 	}
 	
 	ArrayList<String> gsonList = new ArrayList<String>();
